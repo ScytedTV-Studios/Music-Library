@@ -1,0 +1,92 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.top-bar {
+  background-color: #FFEA00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.top-bar .logo {
+  margin-right: 10px;
+  height: 40px;
+  max-height: 100%;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-weight: bold;
+  color: #000000;
+}
+
+.content {
+  padding: 20px;
+}
+
+#filters {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#songList {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#songList th,
+#songList td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#songList th {
+  background-color: #FFEA00;
+  color: #000000;
+}
+
+#songList td {
+  position: relative;
+}
+
+#songList td.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#songList td .audio-player audio {
+  width: 100%;
+}
+
+#songList td .audio-player .controls {
+  margin-top: 10px;
+}
+
+#songList td .audio-player .controls button {
+  background-color: #FFEA00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#songList td .audio-player .controls button:hover {
+  background-color: #FEC100;
+}
+
+#songList td a {
+  text-decoration: none;
+  color: #FFEA00;
+}

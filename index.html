@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Library</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Music Library</h1>
+  </div>
+
+  <div class="content">
+    <div id="filters">
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="">All</option>
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="jazz">Jazz</option>
+        <!-- Add more genres here -->
+      </select>
+
+      <label for="mood">Mood:</label>
+      <select id="mood">
+        <option value="">All</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="calm">Calm</option>
+        <!-- Add more moods here -->
+      </select>
+
+      <label for="search">Search:</label>
+      <input type="text" id="search">
+
+    </div>
+
+    <table id="songList">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Genre</th>
+            <th>Mood</th>
+            <th class="player">Player</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Song rows -->
+          <tr>
+            <td>Song Title 1</td>
+            <td><a href="artist_link" target="_blank">Artist 1</a></td>
+            <td>Genre 1</td>
+            <td>Mood 1</td>
+            <td class="player">
+              <!-- Audio player container -->
+              <div class="audio-player">
+                <!-- Audio player controls and button -->
+                <div class="controls">
+                  <button class="play">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+                <!-- Audio element -->
+                <audio src="song_url"></audio>
+              </div>
+            </td>
+            <td><a href="song_url" download>Download</a></td>
+          </tr>
+          <!-- More song rows... -->
+        </tbody>
+      </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
