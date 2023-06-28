@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 // Function to fetch the song list data from the JSON file
 function fetchSongs() {
-    return fetch('https://cdn.scyted.tv/toolkit/music-library/songs.json/')
+    return fetch('https://cdn.scyted.tv/toolkit/music-library/songs.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch songs. HTTP status code: ' + response.status);
